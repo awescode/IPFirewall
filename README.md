@@ -1,11 +1,6 @@
 # Laravel firewall by IP
 The tool for protection your Laravel 5 website by IP. The system works with dynamic tables and you can add your IP to Z7D firewall remotely.
 
-[![Latest Version on Packagist][ico-version]][link-packagist]
-[![Software License][ico-license]](LICENSE.md)
-[![Build Status][ico-travis]][link-travis]
-[![Total Downloads][ico-downloads]][link-downloads]
-
 # Installation
 
 Via Composer
