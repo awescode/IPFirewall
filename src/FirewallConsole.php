@@ -42,8 +42,6 @@ class FirewallConsole extends Command {
      */
     public function handle()
     {
-        file_put_contents('/var/www/qbiz-it.de/logs.txt', time().' - OK'.PHP_EOL , FILE_APPEND);
-
         DB::table('firewall')->where('typeofsave', 'temporary')->where('created_at', '>', date("Y-m-d H:i:s", time()+Config::app('firewall.timeip')))->delete();
     }
 
