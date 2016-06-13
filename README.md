@@ -29,10 +29,21 @@ $ php artisan migrate
 
 Please change values in /config/firewall.php
 
-For automaticly adding new IP address to firewall use:
+    # how many time will live a temporary IP address (sec)
+    'timeip' => 1*60*60,
+
+    #Variable for adding a new IP to database.
+    'variable' => '_k',
+    
+    #Key for adding a new IP to database.
+    'key' => 'random_key_string'
+
+
+
+For automaticly adding <b>temporary</b> new IP address to firewall use:
  - http://example.com/?{variable_from_firewall_config}={key_from_firewall_config}
 
-For getting SQL query for manual adding PERMANENT ip to database:
+For getting SQL query for manual adding <b>permanent</b> IP to database:
  - http://example.com/ip (your IP)
  - http://example.com/ip/127.0.0.1 (different IP)
  
