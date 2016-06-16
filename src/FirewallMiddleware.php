@@ -6,6 +6,7 @@ use Closure;
 use DB;
 use Config;
 use Redirect;
+use Request;
 
 /**
  * Class FirewallMiddleware
@@ -21,7 +22,7 @@ class FirewallMiddleware
     /**
      * FirewallMiddleware constructor.
      */
-    public function __construct()
+    public function __construct(Request $request)
     {
         if (isset($_SERVER['REMOTE_ADDR']))
         {
