@@ -1,6 +1,6 @@
 <?php
 
-namespace z7d\firewall;
+namespace z7d\ip-firewall;
 
 use Closure;
 use DB;
