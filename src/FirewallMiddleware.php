@@ -6,7 +6,6 @@ use Closure;
 use DB;
 use Config;
 use Redirect;
-use Request;
 
 /**
  * Class FirewallMiddleware
@@ -22,14 +21,15 @@ class FirewallMiddleware
     /**
      * FirewallMiddleware constructor.
      */
-    public function __construct(Request $request)
+    public function __construct()
     {
         if (isset($_SERVER['REMOTE_ADDR']))
         {
             $this->remoteAddr = $_SERVER['REMOTE_ADDR'];
         }
-        $this->checkSecretKey();
-        if (!in_array($request->route()->getName(), ['ip-firewall', 'ip-firewall-other']))
+        $this->checkSecretKey(); 
+
+        if (!in_array(\Request::capture()->getRequestUri(), ['/ip-firewall']))
         {
             $this->checkIP();
         }
