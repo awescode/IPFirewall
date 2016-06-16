@@ -24,13 +24,13 @@ $ php artisan migrate
 
 1. Please change values in /config/firewall.php
 
-    # how many time will live a temporary IP address (sec)
+    /*how many time will live a temporary IP address (sec)*/
     'timeip' => 1*60*60,
 
-    #Variable for adding a new IP to database.
+    /*Variable for adding a new IP to database.*/
     'variable' => '_k',
     
-    #Key for adding a new IP to database.
+    /*Key for adding a new IP to database.*/
     'key' => 'random_key_string'
 
 2. Go to http://example.com/ip-firewall, copy mysql string, put to MySQL for adding permanent IP
