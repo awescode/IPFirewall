@@ -18,7 +18,13 @@
             "homepage": "http://www.z7d.de"
         }
     ],
+    "autoload": {
+        "psr-0": {
+            "z7d\\firewall": "src/"
+        }
+    },
     "require": {
-        "php": ">=5.4.0"
+        "php": ">=5.6.0",
+        "laravel/framework": ">=5.1.0",
     }
 }
