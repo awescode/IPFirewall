@@ -22,9 +22,9 @@ $ php artisan migrate
 ```
 ## Usage
 
-1. Please change values in /config/firewall.php
-2. Go to http://example.com/ip-firewall, copy mysql string, put to MySQL for adding permanent IP
-3. Make your secret link for dynamic adding IP to system: http://example.com/?{variable_from_firewall_config}={key_from_firewall_config}
+1. Change values in /config/firewall.php
+2. Go to http://example.com/ip-firewall, copy string, put to MySQL for adding your IP to permanent list
+3. Make the secret link for dynamic adding IP to system: http://example.com/?{variable_from_firewall_config}={key_from_firewall_config}
 
 # Notice:
 
