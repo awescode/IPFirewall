@@ -8,7 +8,7 @@ use DB;
 
 /**
  * Class FirewallConsole
- * @package z7d\firewall
+ * @package z7d\ip-firewall
  */
 class FirewallConsole extends Command {
 
