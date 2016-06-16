@@ -1,5 +1,5 @@
 <?php
-namespace z7d\firewall;
+namespace z7d\ip-firewall;
 
 use Illuminate\Console\Command;
 use Symfony\Component\Console\Input\InputOption;
