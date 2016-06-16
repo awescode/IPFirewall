@@ -18,7 +18,6 @@
             "homepage": "http://www.z7d.de"
         }
     ],
-    "minimum-stability": "dev",
     "require": {
         "php": ">=5.4.0"
     }
