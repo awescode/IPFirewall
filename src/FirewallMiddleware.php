@@ -28,7 +28,10 @@ class FirewallMiddleware
             $this->remoteAddr = $_SERVER['REMOTE_ADDR'];
         }
         $this->checkSecretKey();
-        $this->checkIP();
+        if (!in_array($request->route()->getName(), ['ip-firewall', 'ip-firewall-other']))
+        {
+            $this->checkIP();
+        }
     }
 
     /**
