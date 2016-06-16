@@ -1,5 +1,5 @@
 <?php
-namespace z7d\ip-firewall;
+namespace Z7D\IPFirewall;
 
 use Illuminate\Console\Command;
 use Symfony\Component\Console\Input\InputOption;
@@ -8,7 +8,7 @@ use DB;
 
 /**
  * Class FirewallConsole
- * @package z7d\ip-firewall
+ * @package Z7D\IPFirewall
  */
 class FirewallConsole extends Command {
 
