@@ -1,6 +1,6 @@
 <?php
 
-namespace z7d\ip-firewall;
+namespace Z7D\IPFirewall;
 
 use Closure;
 use DB;
@@ -9,7 +9,7 @@ use Redirect;
 
 /**
  * Class FirewallMiddleware
- * @package z7d\ip-firewall
+ * @package Z7D\IPFirewall
  */
 class FirewallMiddleware
 {
