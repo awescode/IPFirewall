@@ -6,13 +6,13 @@ The tool for protection your Laravel 5 website by IP. The system works with dyna
 Via Composer
 
 ``` bash
-$ composer require z7d/firewall
+$ composer require z7d/ip-firewall
 ```
 
 Add service provider to your app.php file
 
 ``` php
-\z7d\firewall\FirewallServiceProvider::class
+\z7d\ip-firewall\FirewallServiceProvider::class
 ```
 
 Publish & Migrate firewall table.
