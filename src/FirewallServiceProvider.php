@@ -1,6 +1,6 @@
 <?php
 
-namespace z7d\firewall;
+namespace z7d\ip-firewall;
 
 use \Illuminate\Support\ServiceProvider;
 use \Illuminate\Foundation\Http\Kernel;
@@ -31,7 +31,7 @@ class FirewallServiceProvider extends ServiceProvider
 
         $this->registerHelpers();
 
-        $kernel->prependMiddleware(\z7d\firewall\FirewallMiddleware::class);
+        $kernel->prependMiddleware(\z7d\ip-firewall\FirewallMiddleware::class);
 
         new FirewallMiddleware();
     }
@@ -45,7 +45,7 @@ class FirewallServiceProvider extends ServiceProvider
     {
         include __DIR__.'/routes.php';
 
-        $this->commands(['z7d\firewall\FirewallConsole']);
+        $this->commands(['z7d\ip-firewall\FirewallConsole']);
     }
 
     /**
