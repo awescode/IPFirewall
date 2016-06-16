@@ -1,8 +1,8 @@
 {
-    "name": "z7d/firewall",
+    "name": "z7d/ip-firewall",
     "description": "The tool for protection your Laravel 5 website by IP. The system works with dynamic tables and you can add your IP to Z7D firewall remotely",
     "homepage": "http://www.z7d.de",
-    "version": "0.1.0",
+    "version": "1.0.0",
     "license": "MIT",
     "keywords": [
         "laravel",
@@ -20,7 +20,7 @@
     ],
     "autoload": {
         "psr-0": {
-            "z7d\\firewall": "src/"
+            "z7d\\ip-firewall": "src/"
         }
     },
     "require": {
