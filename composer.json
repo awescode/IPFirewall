@@ -1,8 +1,8 @@
 {
-    "name": "z7d/ip-firewall",
+    "name": "awescode/ip-firewall",
     "description": "The tool for protection your Laravel 5 website by IP. The system works with dynamic tables and you can add your IP to Z7D firewall remotely",
-    "homepage": "http://www.z7d.de",
-    "version": "1.0.2",
+    "homepage": "https://www.awescode.de",
+    "version": "1.0.3",
     "license": "MIT",
     "keywords": [
         "laravel",
@@ -14,13 +14,13 @@
     "authors": [
         {
             "name": "Yevhen Lisovenko",
-            "email": "info@z7d.de",
-            "homepage": "http://www.z7d.de"
+            "email": "support@awescode.de",
+            "homepage": "https://www.awescode.de"
         }
     ],
     "autoload": {
         "psr-0": {
-            "Z7D\\IPFirewall": "src/"
+            "Awescode\\IPFirewall": "src/"
         }
     },
     "require": {
