@@ -1,5 +1,5 @@
 # Laravel firewall by IP
-The tool for protection your Laravel 5 website by IP. The system works with dynamic tables and you can add your IP to Z7D firewall remotely.
+The tool for protection your Laravel 5 website by IP. The system works with dynamic tables and you can add your IP to Awescode Firewall remotely.
 
 # Installation
 
@@ -12,7 +12,7 @@ $ composer require awescode/ip-firewall
 Add service provider to your app.php file to 'providers'
 
 ``` php
-\AwesCode\IPFirewall\FirewallServiceProvider::class
+\Awescode\IPFirewall\FirewallServiceProvider::class
 ```
 
 Publish & Migrate firewall table.
