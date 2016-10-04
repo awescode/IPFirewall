@@ -1,6 +1,6 @@
 <?php
 
-namespace Z7D\IPFirewall;
+namespace Awescode\IPFirewall;
 
 use \Illuminate\Support\ServiceProvider;
 use \Illuminate\Foundation\Http\Kernel;
@@ -31,7 +31,7 @@ class FirewallServiceProvider extends ServiceProvider
 
         $this->registerHelpers();
 
-        $kernel->prependMiddleware(Z7D\IPFirewall\FirewallMiddleware::class);
+        $kernel->prependMiddleware(Awescode\IPFirewall\FirewallMiddleware::class);
 
         new FirewallMiddleware();
     }
@@ -45,7 +45,7 @@ class FirewallServiceProvider extends ServiceProvider
     {
         include __DIR__.'/routes.php';
 
-        $this->commands(['Z7D\IPFirewall\FirewallConsole']);
+        $this->commands(['Awescode\IPFirewall\FirewallConsole']);
     }
 
     /**
