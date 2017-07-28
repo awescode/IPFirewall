@@ -1,5 +1,5 @@
 # Laravel firewall by IP
-The tool for protection your Laravel 5 website by IP. The system works with dynamic tables and you can add your IP to Awescode Firewall remotely.
+The tool for protection your Laravel 5 website by IP. The system works with dynamic tables and you can add your IP to https://www.awescode.de Firewall remotely.
 
 # Installation
 
